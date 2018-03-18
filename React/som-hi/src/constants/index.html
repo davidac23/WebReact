@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Ejemplo del login Firebase web</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Iniciar sesión</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Ejemplo del login Firebase web.
+        Sesión iniciada.</p>
+    <button onclick="logout()">Cerrar sesión</button>
+  </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9yAntOg4txvvDO5zkLVhbOOrPUye4ybU",
+    authDomain: "somhifirebase.firebaseapp.com",
+    databaseURL: "https://somhifirebase.firebaseio.com",
+    projectId: "somhifirebase",
+    storageBucket: "somhifirebase.appspot.com",
+    messagingSenderId: "857949037026"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+    
+</body>
+</html>
